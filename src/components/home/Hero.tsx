@@ -6,13 +6,13 @@ import { ArrowUpRight } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <section className="relative min-height-[100vh] flex items-center pt-32 pb-20 overflow-hidden">
+    <section className="relative min-h-screen flex items-center pt-32 pb-20 overflow-hidden">
       {/* Background Shapes */}
-      <div className="absolute top-0 right-0 w-1/2 h-full opacity-40 z-0">
+      <div className="absolute top-0 right-[-10%] w-[60%] h-full opacity-40 z-0 select-none pointer-events-none">
         <img
           src="/assets/abstract modern digital agency 3d shapes dark theme with neon yellow accents high quality.png"
           alt="Abstract Shapes"
-          className="absolute right-0 w-full h-full object-contain scale-125"
+          className="w-full h-full object-contain scale-110"
         />
       </div>
 
@@ -28,13 +28,13 @@ export default function Hero() {
               <span className="text-xs uppercase tracking-widest text-[#E2FF3B] font-bold">Available for new projects</span>
             </div>
 
-            <h1 className="text-5xl md:text-7xl lg:text-8xl leading-[1.1] mb-8">
-              Strategic Design <br />
-              <span className="text-[#555555]">That Drives</span> <br />
-              Measurable Growth.
+            <h1 className="font-title font-bold text-6xl md:text-8xl lg:text-9xl leading-[0.9] mb-8 uppercase tracking-tighter">
+              Strategic <br />
+              <span className="text-[#555555]">Design</span> <br />
+              Innovation.
             </h1>
 
-            <p className="text-lg md:text-xl text-[#999999] mb-12 leading-relaxed max-w-xl">
+            <p className="font-body text-lg md:text-xl text-[#999999] mb-12 leading-relaxed max-w-xl font-medium">
               We partner with visionary founders and forward-thinking brands to deliver digital transformation through strategic creativity and AI innovation.
             </p>
 

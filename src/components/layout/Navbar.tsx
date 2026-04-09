@@ -27,7 +27,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? 'glass py-4 border-b border-white/5 saturate-[1.8]' : 'bg-transparent py-6'}`}>
+    <nav className={`fixed top-0 left-0 w-full z-[100] transition-all duration-300 ${scrolled ? 'bg-black/80 backdrop-blur-xl py-4 border-b border-white/10' : 'bg-black/20 backdrop-blur-sm py-6'}`}>
       <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
         {/* Logo */}
         <Link to="/" className="relative flex items-center h-[40px]">
@@ -67,21 +67,22 @@ export default function Navbar() {
 
         {/* Mobile Toggle */}
         <button 
-          className="lg:hidden w-8 h-8 relative focus:outline-none"
+          className="lg:hidden w-10 h-10 relative focus:outline-none z-[110]"
           onClick={() => setIsOpen(!isOpen)}
+          aria-label="Toggle Menu"
         >
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-6 h-5 flex flex-col justify-between">
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-6 h-4 flex flex-col justify-between">
             <motion.span
-              animate={isOpen ? { rotate: 45, y: 9 } : { rotate: 0, y: 0 }}
-              className="w-full h-[2px] bg-white rounded-full block transform-gpu origin-center"
+              animate={isOpen ? { rotate: 45, y: 7 } : { rotate: 0, y: 0 }}
+              className="w-full h-[3px] bg-[#E2FF3B] rounded-full block transform-gpu origin-center"
             />
             <motion.span
               animate={isOpen ? { opacity: 0 } : { opacity: 1 }}
-              className="w-full h-[2px] bg-white rounded-full block"
+              className="w-full h-[3px] bg-[#E2FF3B] rounded-full block"
             />
             <motion.span
-              animate={isOpen ? { rotate: -45, y: -9 } : { rotate: 0, y: 0 }}
-              className="w-full h-[2px] bg-white rounded-full block transform-gpu origin-center"
+              animate={isOpen ? { rotate: -45, y: -7 } : { rotate: 0, y: 0 }}
+              className="w-full h-[3px] bg-[#E2FF3B] rounded-full block transform-gpu origin-center"
             />
           </div>
         </button>

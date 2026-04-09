@@ -17,12 +17,12 @@ export default function AboutHero() {
             <span className="text-xs uppercase tracking-widest text-[#E2FF3B] font-bold">Our Story</span>
           </div>
           
-          <h1 className="text-6xl md:text-8xl font-bold mb-8">
+          <h1 className="font-title text-6xl md:text-8xl font-bold mb-8 uppercase tracking-tight">
             We engineer <br />
             <span className="text-[#555555]">strategic growth.</span>
           </h1>
           
-          <p className="text-lg md:text-xl text-[#999999] max-w-2xl mx-auto leading-relaxed mb-12">
+          <p className="font-body text-lg md:text-xl text-[#999999] max-w-2xl mx-auto leading-relaxed mb-12 font-medium">
             MADOLABS is a digital transformation agency dedicated to building high-performance brand experiences that drive measurable business outcomes.
           </p>
 

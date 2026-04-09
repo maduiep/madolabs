@@ -18,6 +18,7 @@ const config: Config = {
       fontFamily: {
         sans: ["var(--font-body)"],
         title: ["var(--font-title)"],
+        body: ["var(--font-body)"],
       },
     },
   },
