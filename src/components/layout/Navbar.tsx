@@ -28,10 +28,7 @@ export default function Navbar() {
 
   return (
     <>
-    <nav 
-      className={`fixed top-0 left-0 w-full z-[1000] transition-all duration-300 ${scrolled ? 'bg-black/90 backdrop-blur-xl py-3 border-b border-white/10' : 'bg-transparent py-5'}`}
-      style={{ position: 'fixed', top: 0, left: 0, width: '100%', zIndex: 1000 }}
-    >
+      <nav className={`fixed top-0 left-0 w-full z-[110] transition-all duration-300 ${scrolled ? 'bg-black/80 backdrop-blur-xl py-4 border-b border-white/10' : 'bg-black/20 backdrop-blur-sm py-6'}`}>
         <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
           {/* Logo */}
           <Link to="/" className="relative flex items-center h-[40px]" onClick={() => setIsOpen(false)}>
@@ -43,7 +40,7 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden min-[1100px]:flex items-center space-x-6">
+          <div className="hidden lg:flex items-center space-x-6">
             {navLinks.map((link) => (
               <Link 
                 key={link.name} 
@@ -56,7 +53,7 @@ export default function Navbar() {
           </div>
 
           {/* CTA Section */}
-          <div className="hidden min-[1100px]:flex items-center space-x-6">
+          <div className="hidden lg:flex items-center space-x-6">
             <a href="tel:+18005550199" className="flex items-center text-[13px] font-medium hover:text-[#E2FF3B] transition-colors">
               <Phone size={14} className="mr-2" />
               Let's Talk
@@ -71,7 +68,7 @@ export default function Navbar() {
 
           {/* Mobile Toggle */}
           <button 
-            className="min-[1100px]:hidden w-12 h-12 relative focus:outline-none z-[1100] flex items-center justify-center"
+            className="lg:hidden w-10 h-10 relative focus:outline-none z-[110]"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle Menu"
           >
@@ -96,12 +93,10 @@ export default function Navbar() {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            initial={{ opacity: 0, x: '100%' }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: '100%' }}
-            transition={{ type: "spring", damping: 25, stiffness: 200 }}
-            className="fixed inset-0 z-[950] bg-black backdrop-blur-3xl min-[1100px]:hidden overflow-y-auto"
-            style={{ position: 'fixed', inset: 0, zIndex: 950 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-[105] bg-black/95 backdrop-blur-2xl lg:hidden overflow-y-auto"
           >
             <div className="min-h-full flex flex-col justify-center items-start p-12 py-24">
               <div className="flex flex-col space-y-6 w-full max-w-sm text-left">
