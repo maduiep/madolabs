@@ -28,7 +28,7 @@ export default function Hero() {
               <span className="text-xs uppercase tracking-widest text-[#E2FF3B] font-bold">Available for new projects</span>
             </div>
 
-            <h1 className="font-title font-bold text-6xl md:text-8xl lg:text-9xl leading-[0.9] mb-8 uppercase tracking-tighter">
+            <h1 className="font-title font-bold text-5xl md:text-8xl lg:text-9xl leading-[1.1] md:leading-[0.9] mb-8 uppercase tracking-tighter">
               We drive <br />
               <span className="text-[#555555]">strategic digital</span> <br />
               growth and innovation.
