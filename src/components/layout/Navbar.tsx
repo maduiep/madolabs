@@ -28,10 +28,10 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className={`fixed top-0 left-0 w-full z-[110] transition-all duration-300 ${scrolled ? 'bg-black/80 backdrop-blur-xl py-4 border-b border-white/10' : 'bg-black/20 backdrop-blur-sm py-6'}`}>
-        <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
+      <nav className={`fixed top-0 left-0 w-full z-[110] transition-all duration-300 ${scrolled ? 'bg-black/80 backdrop-blur-xl py-3 border-b border-white/10' : 'bg-black/20 backdrop-blur-sm py-4 md:py-6'}`}>
+        <div className="container mx-auto px-4 sm:px-6 md:px-12 flex justify-between items-center">
           {/* Logo */}
-          <Link to="/" className="relative flex items-center h-[40px]" onClick={() => setIsOpen(false)}>
+          <Link to="/" className="relative flex items-center h-[32px] sm:h-[40px]" onClick={() => setIsOpen(false)}>
             <img
               src="/assets/Logo.png"
               alt="MadoLabs"
@@ -98,8 +98,8 @@ export default function Navbar() {
             exit={{ opacity: 0 }}
             className="fixed inset-0 z-[105] bg-black/95 backdrop-blur-2xl lg:hidden overflow-y-auto"
           >
-            <div className="min-h-full flex flex-col justify-center items-start p-12 py-24">
-              <div className="flex flex-col space-y-6 w-full max-w-sm text-left">
+            <div className="min-h-full flex flex-col justify-center items-start p-8 sm:p-12 py-24">
+              <div className="flex flex-col space-y-5 sm:space-y-6 w-full max-w-sm text-left">
                 {navLinks.map((link, i) => (
                   <motion.div
                     key={link.name}

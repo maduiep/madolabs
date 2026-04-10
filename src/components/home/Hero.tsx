@@ -30,7 +30,7 @@ export default function Hero() {
 
             <h1 className="font-title font-bold text-5xl md:text-8xl lg:text-9xl leading-[1.1] md:leading-[0.9] mb-8 uppercase tracking-tighter">
               We drive <br />
-              <span className="text-[#555555]">strategic digital</span> <br />
+              <span className="text-[#888888]">strategic digital</span> <br />
               growth and innovation.
             </h1>
 

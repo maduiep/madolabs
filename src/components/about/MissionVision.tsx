@@ -26,9 +26,9 @@ const sections = [
 export default function MissionVision() {
   return (
     <section className="py-32 bg-black">
-      <div className="container mx-auto px-6 md:px-12 space-y-32">
+      <div className="container mx-auto px-6 md:px-12 space-y-24 md:space-y-32">
         {sections.map((section, idx) => (
-          <div key={idx} className={`flex flex-col ${section.reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center gap-16 md:gap-24`}>
+          <div key={idx} className={`flex flex-col ${section.reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center gap-12 md:gap-24`}>
             {/* Image Col */}
             <motion.div 
               initial={{ opacity: 0, x: section.reverse ? 50 : -50 }}
@@ -60,7 +60,7 @@ export default function MissionVision() {
               </p>
               
               {section.extra && (
-                <p className="text-sm text-[#555555] leading-relaxed">
+                <p className="text-sm text-[#888888] leading-relaxed">
                   {section.extra}
                 </p>
               )}
@@ -75,7 +75,7 @@ export default function MissionVision() {
                         </span>
                         <h4 className="font-bold text-white">{point.title}</h4>
                       </div>
-                      <p className="text-sm text-[#555555] ml-8">{point.text}</p>
+                      <p className="text-sm text-[#888888] ml-8">{point.text}</p>
                     </div>
                   ))}
                 </div>
