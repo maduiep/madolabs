@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 export default function AboutHero() {
   return (
-    <section className="pt-40 pb-20 bg-black relative">
+    <section className="pt-40 pb-20 bg-black relative overflow-hidden">
       <div className="container mx-auto px-6 md:px-12 text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
