@@ -1,6 +1,6 @@
 import ServicesHero from "@/components/services/ServicesHero";
 import ServiceGrid from "@/components/services/ServiceGrid";
-import ServiceFaq from "@/components/services/ServiceFaq";
+import SolutionGuide from "@/components/services/SolutionGuide";
 import ProjectCta from "@/components/services/ProjectCta";
 
 export default function Services() {
@@ -8,7 +8,7 @@ export default function Services() {
     <>
       <ServicesHero />
       <ServiceGrid />
-      <ServiceFaq />
+      <SolutionGuide />
       <ProjectCta />
     </>
   );

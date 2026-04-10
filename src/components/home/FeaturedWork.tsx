@@ -16,7 +16,7 @@ const projects = [
   {
     id: 'aura',
     title: 'Aura Premium Retail',
-    category: 'E-Commerce Strategy • 3D Design',
+    category: 'E-Commerce • Strategy • 3D Design',
     stat: '$4.2M',
     statLabel: 'Q1 Revenue',
     image: '/assets/project-aura.png'

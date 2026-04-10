@@ -37,10 +37,16 @@ export default function Footer() {
           <div>
             <h4 className="text-[#E2FF3B] font-bold mb-6">Navigation</h4>
             <ul className="space-y-4">
-              {['Home', 'About Us', 'Services', 'Case Studies', 'Insights'].map((item) => (
-                <li key={item}>
-                  <Link to={`/${item.toLowerCase().replace(' ', '-')}`} className="text-sm text-[#999999] hover:text-white transition-colors">
-                    {item}
+              {[
+                { name: 'Home', href: '/' },
+                { name: 'About MADOLABS', href: '/about' },
+                { name: 'Services', href: '/services' },
+                { name: 'Case Studies', href: '/case-studies' },
+                { name: 'Insights', href: '/insights' }
+              ].map((item) => (
+                <li key={item.name}>
+                  <Link to={item.href} className="text-sm text-[#999999] hover:text-white transition-colors">
+                    {item.name}
                   </Link>
                 </li>
               ))}
@@ -67,15 +73,15 @@ export default function Footer() {
             <ul className="space-y-4 text-sm text-[#999999]">
               <li className="flex items-center">
                 <span className="text-[#E2FF3B] mr-2">✉</span>
-                hello@madolabs.com
+                hello@mado.digital
               </li>
               <li className="flex items-center">
                 <span className="text-[#E2FF3B] mr-2">✆</span>
-                +1 (234) 567-890
+                +1 (800) 555-0199
               </li>
               <li className="leading-relaxed">
                 <span className="text-[#E2FF3B] mr-2">📍</span>
-                123 Innovation Drive<br />Tech District, NY 10001
+                755 Innovation Drive<br />Digital District, NY 10001
               </li>
             </ul>
           </div>

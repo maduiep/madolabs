@@ -29,9 +29,9 @@ export default function Hero() {
             </div>
 
             <h1 className="font-title font-bold text-6xl md:text-8xl lg:text-9xl leading-[0.9] mb-8 uppercase tracking-tighter">
-              Strategic <br />
-              <span className="text-[#555555]">Design</span> <br />
-              Innovation.
+              We drive <br />
+              <span className="text-[#555555]">strategic digital</span> <br />
+              growth and innovation.
             </h1>
 
             <p className="font-body text-lg md:text-xl text-[#999999] mb-12 leading-relaxed max-w-xl font-medium">
